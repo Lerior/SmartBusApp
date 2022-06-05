@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <Button
+        android:id="@+id/buttonMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#A9EF3636"
+        android:foregroundTint="#FFFFFF"
+        android:includeFontPadding="false"
+        android:text="*|Enviar alerta|*"
+        android:textColor="#FFFFFF"
+        android:textCursorDrawable="@android:drawable/ic_dialog_alert"
+        map:icon="@android:drawable/stat_sys_warning"
+        map:iconTint="#FFFFFF"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.497"
+        map:layout_constraintStart_toStartOf="parent" />
+
+</fragment>

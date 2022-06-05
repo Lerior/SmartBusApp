@@ -4,56 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#32684B"
     android:foregroundTint="#000000"
     tools:context=".MainActivity2">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="515dp"
-        android:layout_height="411dp"
+        android:layout_width="476dp"
+        android:layout_height="287dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/mapa" />
+        app:layout_constraintVertical_bias="0.266"
+        app:srcCompat="@drawable/ruta" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#AE3535"
-        android:backgroundTint="#C63D3D"
-        android:text="Enviar alerta"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#3DDA89"
+        android:text="Ver mi ubicacion"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_mylocation"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971"
-        app:strokeColor="#9E3C3C" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.674" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="111dp"
-        android:layout_height="25dp"
-        android:text="Nombre_Usuario"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="95dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="20dp"
+        android:text="Ruta Combi A"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.871" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DD/MM/AAAA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.832" />
 </androidx.constraintlayout.widget.ConstraintLayout>
